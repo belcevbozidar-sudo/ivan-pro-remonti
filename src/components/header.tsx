@@ -1,12 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Phone, ShieldCheck, X } from "lucide-react";
-import {
-  BUSINESS_TAGLINE,
-  HEADER_NOTE,
-  PHONE_DISPLAY,
-  PHONE_LINK,
-} from "@/lib/business.ts";
+import { HEADER_NOTE, PHONE_DISPLAY, PHONE_LINK } from "@/lib/business.ts";
 
 const NAV_ITEMS = [
   { label: "Начало", path: "/" },
@@ -42,23 +37,29 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex h-16 items-center justify-between gap-4 sm:h-20">
-          <Link to="/" className="flex min-w-0 items-center gap-3">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#ffffff] to-[#e5e7eb] text-[#0a1628] shadow-lg shadow-black/10">
-              <span className="text-lg font-black tracking-tighter">YV</span>
-            </span>
-            <span className="min-w-0">
-              <span className="block text-xl font-black leading-none tracking-tight">
-                YV <span className="text-[#e63c2f]">Construction</span>
-              </span>
-              <span
-                className={`mt-1 hidden text-[10px] font-bold uppercase tracking-[0.2em] sm:block ${
-                  isScrolled ? "text-[#526174]" : "text-white/55"
-                }`}
-              >
-                {BUSINESS_TAGLINE}
-              </span>
-            </span>
+        <div className="relative flex h-16 items-center justify-between gap-4 sm:h-20">
+          <a
+            href={PHONE_LINK}
+            className={`inline-flex h-10 w-10 items-center justify-center rounded-full transition sm:hidden ${
+              isScrolled
+                ? "bg-[#f5a623]/12 text-[#e63c2f]"
+                : "bg-white/10 text-white"
+            }`}
+            aria-label="Обади се"
+          >
+            <Phone className="h-5 w-5" />
+          </a>
+
+          <Link
+            to="/"
+            className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center sm:static sm:translate-x-0"
+            aria-label="YV Construction - начална страница"
+          >
+            <img
+              src="/images/yv-logo.png"
+              alt="YV Construction"
+              className="h-10 w-auto max-w-[190px] object-contain sm:h-12 sm:max-w-[250px] lg:h-14 lg:max-w-[285px]"
+            />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
@@ -98,18 +99,6 @@ export default function Header() {
             >
               <Phone className="h-4 w-4" />
               {PHONE_DISPLAY}
-            </a>
-
-            <a
-              href={PHONE_LINK}
-              className={`inline-flex h-10 w-10 items-center justify-center rounded-full transition sm:hidden ${
-                isScrolled
-                  ? "bg-[#f5a623]/12 text-[#e63c2f]"
-                  : "bg-white/10 text-white"
-              }`}
-              aria-label="Обади се"
-            >
-              <Phone className="h-5 w-5" />
             </a>
 
             <button

@@ -3,7 +3,6 @@ import { MapPin, Phone, ShieldCheck, Sparkles } from "lucide-react";
 import {
   BUSINESS_DESCRIPTION,
   BUSINESS_NAME,
-  BUSINESS_TAGLINE,
   HEADER_NOTE,
   PHONE_DISPLAY,
   PHONE_LINK,
@@ -29,17 +28,11 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
           <div className="space-y-5">
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#f5a623] to-[#e63c2f] text-white shadow-lg shadow-[#e63c2f]/25">
-                <span className="text-lg font-black tracking-tighter">YV</span>
-              </span>
-              <div>
-                <h3 className="text-2xl font-black leading-none">
-                  {BUSINESS_NAME}
-                </h3>
-                <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-white/45">
-                  {BUSINESS_TAGLINE}
-                </p>
-              </div>
+              <img
+                src="/images/yv-logo.png"
+                alt={BUSINESS_NAME}
+                className="h-14 w-auto max-w-[280px] object-contain"
+              />
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-white/58">
               {BUSINESS_DESCRIPTION} Работим чисто, коректно, с гаранция на
