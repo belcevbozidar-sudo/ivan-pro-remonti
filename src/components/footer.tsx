@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { Clock, MapPin, Phone, Sparkles } from "lucide-react";
+import { MapPin, Phone, ShieldCheck, Sparkles } from "lucide-react";
 import {
   BUSINESS_DESCRIPTION,
   BUSINESS_NAME,
   BUSINESS_TAGLINE,
+  HEADER_NOTE,
   PHONE_DISPLAY,
   PHONE_LINK,
   SERVICE_AREA,
   SERVICES,
-  WORKING_HOURS,
 } from "@/lib/business.ts";
 
 const QUICK_LINKS = [
@@ -54,8 +54,8 @@ export default function Footer() {
                 {PHONE_DISPLAY}
               </a>
               <div className="flex items-center gap-2.5 text-sm text-white/50">
-                <Clock className="h-4 w-4" />
-                {WORKING_HOURS}
+                <ShieldCheck className="h-4 w-4" />
+                {HEADER_NOTE}
               </div>
               <div className="flex items-center gap-2.5 text-sm text-white/50">
                 <MapPin className="h-4 w-4" />

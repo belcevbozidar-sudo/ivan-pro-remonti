@@ -20,11 +20,11 @@ import {
   BUSINESS_DESCRIPTION,
   BUSINESS_NAME,
   BUSINESS_PROMISES,
+  HEADER_NOTE,
   PHONE_DISPLAY,
   PHONE_LINK,
   PRICE_CATEGORIES,
   SERVICE_AREA,
-  WORKING_HOURS,
 } from "@/lib/business.ts";
 
 const heroImage = "/images/yv-construction-hero.png";
@@ -35,32 +35,28 @@ const services = [
     title: "Външна топлоизолация",
     text: "EPS системи, каменна вата, дюбелиране, мрежа, шпакловка и декоративна мазилка.",
     color: "from-[#e63c2f] to-[#f5a623]",
-    image:
-      "https://images.pexels.com/photos/5493665/pexels-photo-5493665.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/services/external-insulation.png",
   },
   {
     icon: Brush,
     title: "Вътрешни ремонти",
     text: "Шпакловка, боядисване, гипсокартон, окачени тавани и вътрешна изолация.",
     color: "from-[#2563eb] to-[#22c55e]",
-    image:
-      "https://images.pexels.com/photos/7218579/pexels-photo-7218579.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/services/interior-renovation.png",
   },
   {
     icon: Layers3,
     title: "Плочки и настилки",
     text: "Лепене на плочки, фугиране, ламинат, винил и паркет с подготвена основа.",
     color: "from-[#f5a623] to-[#facc15]",
-    image:
-      "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/services/tiles-flooring.png",
   },
   {
     icon: Hammer,
     title: "Покриви и груб строеж",
     text: "Покриви, зидария, бетон, огради, къртене, електро, ВиК и монтажни дейности.",
     color: "from-[#0ea5e9] to-[#2ecc40]",
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/services/roof-structure.png",
   },
 ];
 
@@ -90,18 +86,15 @@ const process = [
 const gallery = [
   {
     title: "Гладък интериорен финиш",
-    image:
-      "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=900&q=85",
+    image: "/images/gallery/interior-finish.png",
   },
   {
     title: "Свежо боядисване",
-    image:
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=85",
+    image: "/images/gallery/painting-finish.png",
   },
   {
     title: "Фасадна защита",
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=85",
+    image: "/images/gallery/facade-finish.png",
   },
 ];
 
@@ -164,7 +157,7 @@ export default function Index() {
 
             <div className="mt-10 grid max-w-xl grid-cols-3 gap-4 text-white">
               {[
-                ["8-20ч", "работно време"],
+                ["100%", "коректност"],
                 ["100%", "гаранция"],
                 ["цялата", "страна"],
               ].map(([number, label]) => (
@@ -309,7 +302,7 @@ export default function Index() {
 
               <div className="mt-7 flex flex-col gap-3 text-sm font-bold text-[#1a2744] sm:flex-row sm:flex-wrap">
                 <span className="rounded-full bg-[#eef4ff] px-4 py-2">
-                  {WORKING_HOURS}
+                  {HEADER_NOTE}
                 </span>
                 <span className="rounded-full bg-[#fff4e0] px-4 py-2">
                   Безплатен оглед

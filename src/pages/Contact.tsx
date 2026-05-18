@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import { Phone, MapPin, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { PHONE_DISPLAY, PHONE_LINK } from "@/lib/business.ts";
 
 const DETAILS = [
@@ -13,7 +13,7 @@ const DETAILS = [
     text: "Обекти по договорка в България",
   },
   {
-    icon: Clock,
+    icon: ShieldCheck,
     title: "Оглед",
     text: "Удобен час след обаждане",
   },

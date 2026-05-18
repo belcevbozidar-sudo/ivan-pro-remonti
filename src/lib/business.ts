@@ -21,8 +21,8 @@ export const BUSINESS_DESCRIPTION =
   "Всякакъв вид строителни дейности за жилища, сгради, търговски обекти и външни пространства.";
 export const PHONE_DISPLAY = "0876 998 859";
 export const PHONE_LINK = "tel:+359876998859";
-export const WORKING_HOURS = "Понеделник - неделя, 8:00 - 20:00";
 export const SERVICE_AREA = "Работим в цялата страна";
+export const HEADER_NOTE = "Чисто изпълнение, стабилен резултат";
 
 export const SERVICES = [
   {
@@ -32,8 +32,7 @@ export const SERVICES = [
       "EPS системи, каменна вата, мрежа, шпакловка, грунд и декоративна мазилка.",
     details:
       "Изпълняваме фасадни топлоизолации с материали и труд, според нужната дебелина, достъп и състояние на сградата.",
-    image:
-      "https://images.pexels.com/photos/5493665/pexels-photo-5493665.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/services/external-insulation.png",
   },
   {
     icon: PaintRoller,
@@ -42,8 +41,7 @@ export const SERVICES = [
       "Гипсова и фина шпакловка, боядисване, гипсокартон, окачени тавани и вътрешна изолация.",
     details:
       "Подготвяме основата, работим чисто и изпълняваме довършителните дейности с точност в детайла.",
-    image:
-      "https://images.pexels.com/photos/7218579/pexels-photo-7218579.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/services/interior-renovation.png",
   },
   {
     icon: Grid3X3,
@@ -52,8 +50,7 @@ export const SERVICES = [
       "Лепене на плочки, фугиране, ламинат, винил и паркет за жилища и търговски обекти.",
     details:
       "Работим с различни размери плочки и настилки, като съобразяваме основата, нивелацията и крайния финиш.",
-    image:
-      "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/services/tiles-flooring.png",
   },
   {
     icon: Hammer,
@@ -62,8 +59,7 @@ export const SERVICES = [
       "Нови покриви, частични ремонти, пренареждане на керемиди, хидроизолация и улуци.",
     details:
       "Правим оглед на покривната конструкция и предлагаме подходящо решение според проблема и бюджета.",
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/services/roof-structure.png",
   },
   {
     icon: BrickWall,

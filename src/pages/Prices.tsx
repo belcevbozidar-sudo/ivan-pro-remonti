@@ -1,12 +1,12 @@
-import { CheckCircle2, Clock, Phone, ShieldCheck } from "lucide-react";
+import { CheckCircle2, Phone, ShieldCheck } from "lucide-react";
 import {
   BUSINESS_NAME,
   BUSINESS_PROMISES,
+  HEADER_NOTE,
   PHONE_DISPLAY,
   PHONE_LINK,
   PRICE_CATEGORIES,
   SERVICE_AREA,
-  WORKING_HOURS,
 } from "@/lib/business.ts";
 
 export default function Prices() {
@@ -32,8 +32,8 @@ export default function Prices() {
 
             <div className="rounded-2xl border border-white/12 bg-white/[0.08] p-6 backdrop-blur-md">
               <div className="flex items-center gap-3 text-amber-300">
-                <Clock className="h-5 w-5" />
-                <span className="font-black">{WORKING_HOURS}</span>
+                <ShieldCheck className="h-5 w-5" />
+                <span className="font-black">{HEADER_NOTE}</span>
               </div>
               <a
                 href={PHONE_LINK}

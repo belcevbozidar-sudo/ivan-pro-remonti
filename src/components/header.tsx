@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Clock, Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, ShieldCheck, X } from "lucide-react";
 import {
   BUSINESS_TAGLINE,
+  HEADER_NOTE,
   PHONE_DISPLAY,
   PHONE_LINK,
-  WORKING_HOURS,
 } from "@/lib/business.ts";
 
 const NAV_ITEMS = [
@@ -89,8 +89,8 @@ export default function Header() {
                   : "bg-white/10 text-white/70"
               }`}
             >
-              <Clock className="h-4 w-4" />
-              {WORKING_HOURS.replace("Понеделник - неделя, ", "")}
+              <ShieldCheck className="h-4 w-4" />
+              {HEADER_NOTE}
             </div>
             <a
               href={PHONE_LINK}
