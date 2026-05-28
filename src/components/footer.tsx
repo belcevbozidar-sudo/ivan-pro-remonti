@@ -28,11 +28,9 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
           <div className="space-y-5">
             <div className="flex items-center gap-3">
-              <img
-                src="/images/yv-logo.png"
-                alt={BUSINESS_NAME}
-                className="h-14 w-auto max-w-[280px] object-contain"
-              />
+              <span className="text-3xl font-black tracking-normal text-white">
+                {BUSINESS_NAME}
+              </span>
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-white/58">
               {BUSINESS_DESCRIPTION} Работим чисто, коректно, с гаранция на

@@ -29,10 +29,10 @@ export default function About() {
                 За нас
               </span>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-foreground mt-3 mb-5">
-                YV Construction - строителство и ремонти
+                КИД Строй - строителство и ремонти
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                YV Construction извършва всякакъв вид строителни дейности:
+                КИД Строй извършва всякакъв вид строителни дейности:
                 топлоизолация, вътрешни ремонти, плочки и настилки, покриви,
                 зидария, бетон, електро, ВиК и монтажни работи. Подходът е ясен:
                 безплатен оглед, точна препоръка, коректна оферта и прецизно
@@ -42,7 +42,7 @@ export default function About() {
             <div className="rounded-3xl overflow-hidden shadow-xl">
               <img
                 src="/images/yv-construction-hero.png"
-                alt="YV Construction - строителство и ремонти"
+                alt="КИД Строй - строителство и ремонти"
                 className="w-full aspect-[4/3] object-cover"
               />
             </div>

@@ -15,7 +15,7 @@ import {
   Wrench,
 } from "lucide-react";
 
-export const BUSINESS_NAME = "YV Construction";
+export const BUSINESS_NAME = "КИД Строй";
 export const BUSINESS_TAGLINE = "Строителство и ремонти";
 export const BUSINESS_DESCRIPTION =
   "Всякакъв вид строителни дейности за жилища, сгради, търговски обекти и външни пространства.";

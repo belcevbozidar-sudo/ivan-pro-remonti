@@ -78,7 +78,7 @@ export default function MistakesSection() {
               </div>
               <h3 className="text-2xl font-bold">Изберете правилно!</h3>
               <p className="text-white/80 leading-relaxed">
-                YV Construction работи коректно, с ясна оферта и качествени
+                КИД Строй работи коректно, с ясна оферта и качествени
                 материали. Получавате оглед и конкретни стъпки преди началото.
               </p>
               <ul className="space-y-2.5 text-sm text-white/80">

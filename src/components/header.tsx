@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Phone, ShieldCheck, X } from "lucide-react";
-import { HEADER_NOTE, PHONE_DISPLAY, PHONE_LINK } from "@/lib/business.ts";
+import {
+  BUSINESS_NAME,
+  HEADER_NOTE,
+  PHONE_DISPLAY,
+  PHONE_LINK,
+} from "@/lib/business.ts";
 
 const NAV_ITEMS = [
   { label: "Начало", path: "/" },
@@ -53,13 +58,11 @@ export default function Header() {
           <Link
             to="/"
             className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center sm:static sm:translate-x-0"
-            aria-label="YV Construction - начална страница"
+            aria-label={`${BUSINESS_NAME} - начална страница`}
           >
-            <img
-              src="/images/yv-logo.png"
-              alt="YV Construction"
-              className="h-10 w-auto max-w-[190px] object-contain sm:h-12 sm:max-w-[250px] lg:h-14 lg:max-w-[285px]"
-            />
+            <span className="text-xl font-black tracking-normal text-current sm:text-2xl lg:text-3xl">
+              {BUSINESS_NAME}
+            </span>
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">

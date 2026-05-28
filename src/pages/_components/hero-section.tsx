@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <img
           src="/images/yv-construction-hero.png"
-          alt="Майстор боядисва стена - YV Construction"
+          alt="Майстор боядисва стена - КИД Строй"
           className="w-full h-full object-cover object-[61%_center] sm:object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a2744]/95 via-[#1a2744]/70 to-[#1a2744]/25" />
@@ -27,7 +27,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed max-w-xl">
-            YV Construction извършва топлоизолация, вътрешни ремонти, покриви,
+            КИД Строй извършва топлоизолация, вътрешни ремонти, покриви,
             зидария, бетон, плочки, електро, ВиК и монтажни дейности.{" "}
             <span className="text-[#e67e22] font-semibold">
               Оглед и ясна оферта

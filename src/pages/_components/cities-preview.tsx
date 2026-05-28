@@ -19,7 +19,7 @@ export default function CitiesPreview() {
                 </h2>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                YV Construction поема обекти за шпакловка, боядисване и изолации
+                КИД Строй поема обекти за шпакловка, боядисване и изолации
                 по договорка. Обадете се, за да уточним адрес, обем и срок.
               </p>
               <Link
